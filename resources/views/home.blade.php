@@ -19,7 +19,7 @@
                     onclick="event.preventDefault();document.getElementById('user-logout-form').submit();"
                     >Logout</a>
                     <form method="post" action="{{route('logout')}}" id="user-logout-form" style="display: none;">
-                        
+                        {{ csrf_field() }}
                     </form>
                 </div>
             </div>
